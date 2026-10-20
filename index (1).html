@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic website of Maël Bompais, postdoctoral researcher at the University of Nottingham.">
+  <title>Maël Bompais</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fff; color: #292929; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.65; }
+    a { color: inherit; }
+    a:focus-visible { outline: 2px solid #356aa0; outline-offset: 4px; }
+    .site-header { border-bottom: 1px solid #ededed; }
+    .header-inner { max-width: 940px; margin: auto; padding: 0 32px; min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .brand { font-size: 17px; font-weight: 500; letter-spacing: .1px; text-decoration: none; white-space: nowrap; }
+    .tabs { display: flex; align-items: center; flex-wrap: wrap; column-gap: 27px; }
+    .tabs a { display: inline-block; padding: 25px 0 23px; border-bottom: 2px solid transparent; text-decoration: none; color: #666; font-size: 14px; }
+    .tabs a:hover, .tabs a:focus-visible { color: #222; }
+    .tabs a[aria-current="page"] { border-bottom-color: #252525; color: #222; }
+    main { max-width: 940px; margin: auto; padding: 74px 32px 120px; }
+    .page { display: none; max-width: 720px; }
+    .page.active { display: block; }
+    h1 { font-size: 34px; font-weight: 400; letter-spacing: -.5px; line-height: 1.25; margin: 0 0 26px; }
+    h2 { font-size: 17px; font-weight: 600; margin: 37px 0 15px; }
+    p { margin: 0 0 22px; }
+    .affiliation { margin-bottom: 28px; color: #5c5c5c; }
+    .intro { max-width: 610px; }
+    .contact { margin-top: 32px; font-size: 15px; }
+    .contact a { color: #365c83; text-decoration: underline; text-underline-offset: 3px; }
+    .pub-list { list-style: none; padding: 0; margin: 0; }
+    .pub-list li { margin: 0 0 23px; }
+    .pub-title { font-weight: 500; font-size: 16px; line-height: 1.5; }
+    .pub-authors, .pub-venue { font-size: 14px; color: #626262; line-height: 1.55; }
+    .pub-venue { font-style: italic; }
+    .pub-links { font-size: 14px; margin-top: 2px; }
+    .pub-links a { color: #365c83; text-decoration: underline; text-underline-offset: 3px; }
+    .pub-links a:hover { color: #183650; }
+    .pub-links .sep { color: #aaa; margin: 0 7px; }
+    .cv-entry { margin: 0 0 27px; }
+    .cv-dates { display: block; font-size: 14px; color: #666; margin-bottom: 2px; }
+    .cv-role { display: block; font-weight: 500; }
+    .cv-institution { display: block; color: #444; }
+    .cv-detail { display: block; color: #666; font-size: 14px; }
+    @media (max-width: 560px) {
+      .header-inner { padding: 14px 22px 0; align-items: flex-start; flex-direction: column; gap: 4px; }
+      .brand { padding: 7px 0; }
+      .tabs { column-gap: 23px; }
+      .tabs a { padding: 12px 0 13px; }
+      main { padding: 55px 22px 85px; }
+      h1 { font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home">Maël Bompais</a>
+      <nav class="tabs" aria-label="Main navigation">
+        <a href="#home" data-tab="home">Home</a>
+        <a href="#publications" data-tab="publications">Publications</a>
+        <a href="#cv" data-tab="cv">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page" id="home" aria-labelledby="home-title">
+      <h1 id="home-title">Maël Bompais</h1>
+      <p class="affiliation">Postdoctoral Research Associate<br>University of Nottingham, United Kingdom</p>
+      <div class="intro">
+        <p>I study the stochastic dynamics of open quantum systems, particularly quantum trajectories. My work focuses on their long-time behaviour and feedback control, and more recently on purification and reverse-time quantum diffusions for generating quantum ensembles.</p>
+        <p class="contact">Email: <a href="mailto:mael.bompais@nottingham.ac.uk">mael.bompais@nottingham.ac.uk</a></p>
+      </div>
+    </section>
+
+    <section class="page" id="publications" aria-labelledby="publications-title">
+      <h1 id="publications-title">Publications</h1>
+
+      <h2>Preprints</h2>
+      <ul class="pub-list">
+        <li>
+          <div class="pub-title">Generating quantum ensembles via reverse-time quantum diffusions</div>
+          <div class="pub-authors">M. Bompais, M. Guţă, J. P. Garrahan (2026)</div>
+          <div class="pub-venue">Preprint</div>
+          <div class="pub-links"><a href="https://arxiv.org/abs/2606.03848" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+        </li>
+      </ul>
+
+      <h2>Journal articles</h2>
+      <ul class="pub-list">
+        <li>
+          <div class="pub-title">The rate of purification of quantum trajectories</div>
+          <div class="pub-authors">M. Bompais, N. H. Amini, J. P. Garrahan, M. Guţă (2026)</div>
+          <div class="pub-venue">Journal of Physics A: Mathematical and Theoretical, 59, 395301</div>
+          <div class="pub-links"><a href="https://doi.org/10.1088/1751-8121/aea45b" target="_blank" rel="noopener noreferrer">Journal</a><span class="sep">·</span><a href="https://arxiv.org/abs/2601.14023" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+        </li>
+        <li>
+          <div class="pub-title">Asymptotic stability and ergodic properties of quantum trajectories under imperfect measurement</div>
+          <div class="pub-authors">N. H. Amini, T. Benoist, M. Bompais, C. Pellegrini (2026)</div>
+          <div class="pub-venue">Journal of Mathematical Physics, 67, 082101</div>
+          <div class="pub-links"><a href="https://doi.org/10.1063/5.0315396" target="_blank" rel="noopener noreferrer">Journal</a><span class="sep">·</span><a href="https://arxiv.org/abs/2512.05770" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+        </li>
+        <li>
+          <div class="pub-title">Exponential selection and feedback stabilization of invariant subspaces of quantum trajectories</div>
+          <div class="pub-authors">N. H. Amini, M. Bompais, C. Pellegrini (2024)</div>
+          <div class="pub-venue">SIAM Journal on Control and Optimization, 62(5), 2834–2857</div>
+          <div class="pub-links"><a href="https://doi.org/10.1137/23M1607453" target="_blank" rel="noopener noreferrer">Journal</a><span class="sep">·</span><a href="https://arxiv.org/abs/2310.04599" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+        </li>
+        <li>
+          <div class="pub-title">On asymptotic stability of quantum trajectories and their Cesàro mean</div>
+          <div class="pub-authors">N. H. Amini, M. Bompais, C. Pellegrini (2021)</div>
+          <div class="pub-venue">Journal of Physics A: Mathematical and Theoretical, 54, 385304</div>
+          <div class="pub-links"><a href="https://doi.org/10.1088/1751-8121/ac1909" target="_blank" rel="noopener noreferrer">Journal</a><span class="sep">·</span><a href="https://arxiv.org/abs/2104.13485" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+        </li>
+      </ul>
+
+      <h2>Conference proceedings</h2>
+      <ul class="pub-list">
+        <li>
+          <div class="pub-title">On the robustness of feedback stabilization for discrete-time quantum trajectories beyond QND measurements</div>
+          <div class="pub-authors">M. Bompais, N. H. Amini (2025)</div>
+          <div class="pub-venue">IEEE Conference on Decision and Control (CDC 2025)</div>
+          <div class="pub-links"><a href="https://doi.org/10.1109/CDC57313.2025.11312429" target="_blank" rel="noopener noreferrer">Proceedings</a></div>
+        </li>
+        <li>
+          <div class="pub-title">Asymptotic stability of non-demolition quantum trajectories with measurement imperfections</div>
+          <div class="pub-authors">M. Bompais, N. H. Amini (2023)</div>
+          <div class="pub-venue">IEEE Conference on Decision and Control (CDC 2023)</div>
+          <div class="pub-links"><a href="https://doi.org/10.1109/CDC49753.2023.10384090" target="_blank" rel="noopener noreferrer">Proceedings</a><span class="sep">·</span><a href="https://arxiv.org/abs/2304.02462" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+        </li>
+        <li>
+          <div class="pub-title">Parameter estimation for quantum trajectories: Convergence result</div>
+          <div class="pub-authors">M. Bompais, N. H. Amini, C. Pellegrini (2022)</div>
+          <div class="pub-venue">IEEE Conference on Decision and Control (CDC 2022)</div>
+          <div class="pub-links"><a href="https://doi.org/10.1109/CDC51059.2022.9992617" target="_blank" rel="noopener noreferrer">Proceedings</a><span class="sep">·</span><a href="https://arxiv.org/abs/2204.00343" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+        </li>
+        <li>
+          <div class="pub-title">The p-value as a new similarity function for spectral clustering in sensor networks</div>
+          <div class="pub-authors">M. Bompais, H. Ameur, D. Pastor, E. Dupraz (2018)</div>
+          <div class="pub-venue">IEEE Statistical Signal Processing Workshop (SSP 2018)</div>
+          <div class="pub-links"><a href="https://doi.org/10.1109/SSP.2018.8450769" target="_blank" rel="noopener noreferrer">Proceedings</a></div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="page" id="cv" aria-labelledby="cv-title">
+      <h1 id="cv-title">CV</h1>
+      <h2>Academic position</h2>
+      <div class="cv-entry">
+        <span class="cv-dates">2024–present</span>
+        <span class="cv-role">Postdoctoral Research Associate</span>
+        <span class="cv-institution">University of Nottingham, United Kingdom</span>
+        <span class="cv-detail">School of Mathematical Sciences &amp; School of Physics and Astronomy</span>
+      </div>
+
+      <h2>Education</h2>
+      <div class="cv-entry">
+        <span class="cv-dates">2020–2024</span>
+        <span class="cv-role">PhD in Applied Mathematics</span>
+        <span class="cv-institution">Université Paris-Saclay, CentraleSupélec (L2S), France</span>
+        <span class="cv-detail">Thesis: <i>Asymptotic stability and feedback stabilisation of quantum trajectories</i></span>
+        <span class="cv-detail">Supervisors: Nina Amini and Clément Pellegrini</span>
+      </div>
+      <div class="cv-entry">
+        <span class="cv-dates">2019–2020</span>
+        <span class="cv-role">Master 2 in Probability and Random Models</span>
+        <span class="cv-institution">Sorbonne Université, Paris, France</span>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const pages = ['home', 'publications', 'cv'];
+    function showPage() {
+      const requested = window.location.hash.substring(1);
+      const selected = pages.includes(requested) ? requested : 'home';
+      for (const page of pages) {
+        const active = selected === page;
+        document.getElementById(page).classList.toggle('active', active);
+        const link = document.querySelector('[data-tab="' + page + '"]');
+        if (active) link.setAttribute('aria-current', 'page');
+        else link.removeAttribute('aria-current');
+      }
+    }
+    window.addEventListener('hashchange', showPage);
+    showPage();
+  </script>
+</body>
+</html>
